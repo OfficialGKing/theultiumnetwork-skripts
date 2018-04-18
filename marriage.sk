@@ -3,4 +3,5 @@ command /marry <player>:
     permission message: &4Sorry, you can't use this without permission.
     trigger:
         if player is not {married.%player%}:
-            set 
+            set {marriage.request.%player%} to player
+            set {marriage.requested.%player%} to arg 1
