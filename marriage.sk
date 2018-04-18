@@ -7,6 +7,7 @@ command /marry <player>:
         if player is not {married.%player%}:
             set {marriage.request.%player%} to player
             set {marriage.requested.%player%} to arg 1
+            send "{@title} >> &4Hey, %arg 1%, %{marriage.request.%player%}% wants to marry you, do you accept?" to arg 1
         else if player is {married.%player%}:
             cancel event
             send "{@title} >> &4Sorry, you can't use this command."
