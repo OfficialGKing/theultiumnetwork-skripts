@@ -1,0 +1,6 @@
+command /marry <player>:
+    permission: marriage.marry.use
+    permission message: &4Sorry, you can't use this without permission.
+    trigger:
+        if player is not {married.%player%}:
+            set 
